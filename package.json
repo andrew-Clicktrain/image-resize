@@ -1,0 +1,36 @@
+{
+  "name": "imagemagick-bucket-size",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "author": "ClickTrain Marketing Platform LTD",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "install": "npm i && firebase init",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+    },
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "@google-cloud/storage": "^6.0.1",
+    "emulate": "^1.0.2",
+    "fs": "^0.0.1-security",
+    "imagemagick": "^0.1.3",
+    "path": "^0.12.7",
+    "util": "^0.12.4"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  }
+}
